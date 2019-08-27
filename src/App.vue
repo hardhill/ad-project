@@ -15,8 +15,8 @@
     <v-app-bar app dark class="primary">
       <v-app-bar-nav-icon @click="drawer=!drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
       <v-toolbar-title class="headline">
-        <router-link to="/" class="title-link">
-        <span>Vuetify</span>
+        <router-link to="/" class="pointer" tag="span">
+        Vuetify
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -52,9 +52,8 @@ export default {
 </script>
 
 <style scoped>
-.title-link{
-  color:aliceblue;
-  text-decoration:none
+.pointer{
+  cursor: pointer;
 }
 </style>
 
