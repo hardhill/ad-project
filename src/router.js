@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import List from '@/components/List'
+import AdList from '@/components/AdList'
 import NewAd from '@/components/NewAd'
 import Orders from '@/components/Orders'
 import Login from '@/components/Login'
 import Reg from '@/components/Reg'
+import Ad from '@/components/Ad'
 
 Vue.use(Router)
 
@@ -26,7 +27,7 @@ export default new Router({
         {
             path:'/list',
             name:'list',
-            component:List
+            component:AdList
         },
         {
             path:'/orders',
@@ -35,13 +36,20 @@ export default new Router({
         },
         {
             path:'/new',
-            name:'new',
+            name:'newAd',
             component:NewAd
         },
         {
             path:'/login',
             name:'login',
             component:Login
+        },
+        {
+            path:'/ad/:id',
+            props:true,
+            name:'ad',
+            component:Ad
         }
+
     ]
 })
