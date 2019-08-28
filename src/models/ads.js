@@ -31,9 +31,15 @@ export default {
         ]
     },
     mutations: {
-
+        setNewAd(state, payload){
+            state.ads.push(payload)
+        }
     },
     actions: {
+        createAd({commit},payload){
+            payload.id = "7hh28"
+            commit('setNewAd',payload)
+        }
 
     },
     getters: {

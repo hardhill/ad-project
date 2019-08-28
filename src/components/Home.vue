@@ -1,6 +1,5 @@
 <template>
-  <!--  -->
-  <div>
+<div>
     <v-container fluid>
       <v-layout row>
         <v-flex xs12>
@@ -15,7 +14,7 @@
       </v-layout>
     </v-container>
     <v-container grid-list-lg>
-      <v-layout row wrap="true">
+      <v-layout row wrap>
         <v-flex xs12 sm6 md4 lg3 v-for="ad in ads" :key="ad.id">
           <v-card elevation="5" raised>
             <v-img class="white--text" height="200px" :src="ad.imageSrc">
@@ -25,13 +24,13 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn text :to="'/ad/' + ad.id">Open</v-btn>
-              <v-btn raised outlined="true">Buy</v-btn>
+              <v-btn raised outlined>Buy</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+</div>
 </template>
 
 

@@ -70,9 +70,10 @@ export default {
         const ad = {
           title:this.title,
           description:this.description,
-          promo:this.promo
+          promo:this.promo,
+          imageSrc:'https://bit.ua/wp-content/uploads/2017/06/ivars-krutainis-146071-800x360.jpg'
         }
-        console.log(ad)
+        this.$store.dispatch('createAd', ad)
       }
     }
   }
