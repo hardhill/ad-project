@@ -48,6 +48,7 @@
               >Create Ad</v-btn>
             </v-flex>
           </v-layout>
+          
         </v-flex>
       </v-layout>
   </v-container>
@@ -77,6 +78,7 @@ export default {
       }
     }
   }
+  
 }
 </script>
 

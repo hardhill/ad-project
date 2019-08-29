@@ -28,7 +28,8 @@ export default {
                 imageSrc: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
                 id: "4"
             }
-        ]
+        ],
+        count:0
     },
     mutations: {
         setNewAd(state, payload){

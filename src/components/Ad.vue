@@ -8,11 +8,12 @@
         <v-card-text>
           <h2>{{OneAd.title}}</h2>
           <p>{{OneAd.description}}</p>
+          
         </v-card-text>
         <v-card-actions class="mr-2">
           <v-spacer></v-spacer>
           <v-btn class="warning" text>Edit</v-btn>
-          <v-btn class="success">Buy</v-btn>
+          <v-btn class="success" @click="Increment">Buy</v-btn>
         </v-card-actions>
       </v-flex>
     </v-layout>
@@ -29,7 +30,8 @@ export default {
       OneAd(){
           const id = this.id
           return this.$store.getters.GetAdById(id)
-      }
+      },
+      
   }
 };
 </script>
